@@ -8,9 +8,21 @@
                 <div class="h-1/3"><p><b>의미</b></p><p id="means" style="font-size: 1.2rem;" :class="{ hide: hideMeans }"> {{ means.join(', ') }}</p></div>
             </div>
             <div class="w-full md:w-1/4 mt-4">
-                <div class="w-1/3 inline-block md:w-full md:h-1/3"><b>품사 가리기</b>:<input type="checkbox" v-model="hideParts"></div>
-                <div class="w-1/3 inline-block md:w-full md:h-1/3"><b>발음 가리기</b>:<input type="checkbox" v-model="hidePron"></div>
-                <div class="w-1/3 inline-block md:w-full md:h-1/3"><b>의미 가리기</b>:<input type="checkbox" v-model="hideMeans"></div>
+				<label for="hideParts">
+					<div class="w-full inline-block md:h-1/3 cursor-pointer py-1 md:py-0">
+						<b>품사 가리기</b>:<input id="hideParts" type="checkbox" v-model="hideParts">
+					</div>
+				</label>
+				<label for="hidePron">
+					<div class="w-full inline-block md:h-1/3 cursor-pointer py-1 md:py-0">
+						<b>발음 가리기</b>:<input id="hidePron" type="checkbox" v-model="hidePron">
+					</div>
+				</label>
+				<label for="hideMeans">
+					<div class="w-full inline-block md:h-1/3 cursor-pointer py-1 md:py-0">
+						<b>의미 가리기</b>:<input id="hideMeans" type="checkbox" v-model="hideMeans">
+					</div>
+				</label>
             </div> 
         </div>
     </div>
