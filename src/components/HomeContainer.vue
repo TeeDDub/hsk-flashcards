@@ -11,6 +11,12 @@
         :entry="data[currentId[level]].entry" :parts="data[currentId[level]].parts" :pron="data[currentId[level]].pron" :means="data[currentId[level]].means" />
       <button @click="next" class="basis-1/12" id="next" style="background-color: #ccc; border: none; border-radius: 5px; color: #fff;">⏩️</button>
     </div>
+    <div class="flex w-full text-center">
+      <ul>
+        <li>만든 사람: <a href="https://github.com/TeeDDub">@TeeDDub</a></li>
+        <li>도움주신 분: <a href="https://github.com/malkoG">@malkoG</a></li>
+      </ul>
+    </div>
   </div> 
 </template>
 
