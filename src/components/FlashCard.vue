@@ -1,8 +1,8 @@
 <template>
     <div class="bg-white rounded-lg shadow-lg p-6">
         <div class="flex flex-wrap">
-            <div class="w-full md:w-1/4 font-bold" style="font-size: 5rem;">{{ entry }}</div>
-            <div class="w-full md:w-1/2">
+            <div class="w-full md:w-1/2 font-bold" style="font-size: 5rem;">{{ entry }}</div>
+            <div class="w-full md:w-1/4">
                 <div class="h-1/3"><p><b>품사</b></p><p id="parts" style="font-size: 1.2rem;" :class="{ hide: hideParts }"> {{ parts.join(', ') }}</p></div>
                 <div class="h-1/3"><p><b>발음</b></p><p id="pron" style="font-size: 1.2rem;" :class="{ hide: hidePron }"> {{ pron }}</p></div>
                 <div class="h-1/3"><p><b>의미</b></p><p id="means" style="font-size: 1.2rem;" :class="{ hide: hideMeans }"> {{ means.join(', ') }}</p></div>
