@@ -11,6 +11,8 @@
         :entry="data[currentId[level]].entry" :parts="data[currentId[level]].parts" :pron="data[currentId[level]].pron" :means="data[currentId[level]].means" />
       <button @click="next" class="basis-1/12" id="next" style="background-color: #ccc; border: none; border-radius: 5px; color: #fff;">⏩️</button>
     </div>
+  </div> 
+  <footer>
     <div class="flex w-full justify-center">
       <div class="w-1/2">
         <ul>
@@ -19,7 +21,7 @@
         </ul>
       </div>
     </div>
-  </div> 
+  </footer>
 </template>
 
 <script>
