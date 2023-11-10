@@ -12,16 +12,6 @@
       <button @click="next" class="basis-1/12" id="next" style="background-color: #ccc; border: none; border-radius: 5px; color: #fff;">⏩️</button>
     </div>
   </div> 
-  <footer>
-    <div class="flex w-full justify-center">
-      <div class="w-1/2">
-        <ul>
-          <li>만든 사람: <a href="https://github.com/TeeDDub" target="_blank">@TeeDDub</a></li>
-          <li>도움주신 분: <a href="https://github.com/malkoG" target="_blank">@malkoG</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
 </template>
 
 <script>
