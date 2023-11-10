@@ -1,16 +1,25 @@
 <template>
-  <div class="home-container w-full">
-    <select v-model="level">
-      <option v-for="i in 6" :key="i" :value="i">HSK {{ i }}급</option>
-    </select>
-    <p>No.{{ currentId[level] }}</p>
-    <div class="flex w-full">
+  <div class="home-container w-full flex flex-col h-screen">
+    <div class="flex w-full flex-grow">
+      <select v-model="level">
+        <option v-for="i in 6" :key="i" :value="i">HSK {{ i }}급</option>
+      </select>
+      <p>No.{{ currentId[level] }}</p>
+    
       <button @click="prev" class="basis-1/12" id="prev" style="background-color: #ccc; border: none; border-radius: 5px; color: #fff;">⏪️</button>
       <FlashCard class="basis-10/12" style="border: none; border-radius: 5px;"
         :entry="data[currentId[level]].entry" :parts="data[currentId[level]].parts" :pron="data[currentId[level]].pron" :means="data[currentId[level]].means" />
       <button @click="next" class="basis-1/12" id="next" style="background-color: #ccc; border: none; border-radius: 5px; color: #fff;">⏩️</button>
     </div>
-  </div> 
+    <div class="w-1/2">
+      <p class="text-gray-400">
+        <ul>
+          <li>만든 사람: <a href="https://github.com/TeeDDub">@TeeDDub</a></li>
+          <li>도움주신 분: <a href="https://github.com/malkoG">@malkoG</a></li>
+        </ul>
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
