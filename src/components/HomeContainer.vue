@@ -1,6 +1,5 @@
 <template>
   <div class="home-container w-full">
-    <h1>{{ msg }}</h1>
     <select v-model="level">
       <option v-for="i in 6" :key="i" :value="i">HSK {{ i }}급</option>
     </select>
