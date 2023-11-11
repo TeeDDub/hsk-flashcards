@@ -1,7 +1,7 @@
 <template>
   <div class="home-container w-full flex flex-col h-screen">
     <div class="w-full flex-grow flex items-center">
-      <div class="h-1/2">
+      <div class="w-1/2 h-1/2 mx-auto">
         <div class="w-full">
           <select v-model="level">
           <option v-for="i in 6" :key="i" :value="i">HSK {{ i }}급</option>
